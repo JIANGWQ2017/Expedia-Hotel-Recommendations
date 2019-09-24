@@ -3,7 +3,7 @@ import sys
 import os
 
 def processing(params):
-    cmd = 'python ' + params.process_input_script
+    cmd = 'python %s %s %s' % (params.process_input_script, params.RAW_DATA_PATH, params.RAW_DATA_FILENAME)
     print(cmd)
     os.system(cmd)
 
